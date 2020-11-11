@@ -6,6 +6,7 @@ authors = ["Chun Zheng <zhengc42@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+emails = "^0.6"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
