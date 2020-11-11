@@ -8,7 +8,7 @@ def send_email(giftor_name, giftor_email, giftee_name):
     sender = ('bubby', 'santa@northpole.com')
     smtp_host = {'host': 'aspmx.l.google.com', 'timeout': 5}
     message = emails.html(html=body, subject=subject, mail_from=sender)
-    result = message.send(to="zhengc42@gmail.com", smtp=smtp_host)
+    result = message.send(to=giftor_email, smtp=smtp_host)
 
 with open("recipients.json", 'r') as f:
     recipients =json.loads(f.read())
